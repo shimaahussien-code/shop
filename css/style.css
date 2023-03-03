@@ -1,0 +1,425 @@
+/* Index
+1- Common styles
+2- General style
+3- Header 
+    Dropdown list
+4- Base part
+5- Category 
+6- Skills 
+7- Services Icon
+8- Footer                                           */
+
+                                                /*1- Common styles */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 3000px;
+    font-family:'Nunito', sans-serif;
+    color: #4361ee;
+    background:radial-gradient( closest-side at 50% 97%  ,rgb(98, 98, 194) 30% , rgb(167, 190, 235),rgb(255, 255, 255) 80%);
+}
+p{
+    line-height: 1.5;
+    color: #5c6177;
+    text-align: justify;
+}
+
+.list{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+                                                       /*2- General styles*/
+
+.section-header {
+    text-align: center;
+    margin: 40px auto;
+}
+.section-title{
+    font-size: 40px;
+    margin: 15px;
+    text-shadow:1px 1px 30px #2c4ace;
+    transition: all 0.5s;
+}
+.section-title:hover{
+    transform: scale3d(1.1,1.1,1.1);
+    color: #071d80;
+}
+.section-header .line{
+    width: 100px;
+    height:4px;
+    margin: 15px auto;
+    border: 1px solid #6a6d70;
+    background-color: #4a4ae2;
+    transition: width 1s;
+}
+.section-header:hover .line{
+    width: 200px;
+}
+                                                         /* 3- Header */
+header {
+    padding: 30px 0;
+}
+.navbar-brand{
+    
+    transition: 0.5s;
+}
+.navbar-brand:hover{
+    text-shadow: 5px 5px 20px rgb(19, 111, 136), -5px -5px 20px  rgb(19, 111, 136);
+}
+.spinner-grow{
+    width: 100px;
+    height: 100px;
+}
+
+.navbar  .nav-link {
+    position: relative;
+    padding: 5px;
+   
+    margin: 0px 10px;
+
+    font-weight: bold;
+}
+.navbar  .nav-link:before,.navbar  .nav-link:after{
+content:"";
+position: absolute;
+border: 0px groove rgb(129, 136, 194); 
+left: 0;
+top:0; 
+transition: transform 0.3s;
+
+}
+.navbar  .nav-link:before{
+    width: 103%;
+    height: 100%;
+    border-width: 0 3px;
+    transform: scale3d(1,0,1);
+
+}
+.navbar  .nav-link:hover:before{
+ transform: scale3d(1,1,1);
+ padding: 0px ;
+}
+.navbar  .nav-link:after{
+    width: 98%;
+    height: 100%;   
+border-width: 3px 0;
+transform: scale3d(0,1,1);
+transform-origin: left;
+
+}
+.navbar  .nav-link:hover:after{
+ transform: scale3d(1,1,1);
+ transition-delay: 0.3s;
+ padding: 0px ;
+}
+.navbar .nav-link:hover::first-letter,.navbar .nav-link .btn:hover::first-letter{
+    color: #f0acf0;
+    font-size: larger;
+}
+   
+          /*//////*/
+.header-content .head-icons ul li  {
+    padding: 10px ;
+    font-weight: bold;
+}
+.header-content .head-icons ul li .icon {
+ position: relative;
+ margin-right:10px;
+}
+.header-content .head-icons ul li .icon::after{
+    position: absolute;
+    content: "0";
+    background-color: #fdfafa;
+    color: #0b16b9;
+    border-radius: 50%;
+    padding: 3px;
+    font-size: 15px;
+    bottom: -8px;
+}
+                                                                 /*4- Base part */
+.base-container{
+    width: 90%;
+    height: 500px;
+    position: relative;
+}
+.base-container img {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    border-radius: 30px;
+box-shadow: -1px -1px 20px 5px rgb(236, 236, 247);
+}
+.base-container .base-content{
+    position: absolute;
+    text-align: center;
+    width:40%;
+    bottom: 100px;
+    left: 20px;
+}
+.base-content .title{
+    font-size: 30px;
+    text-shadow:1px 1px 30px #5c6177;
+}
+.base-content .desc{
+    font-size: 20px;
+    text-align: justify;
+    color: #5c6177;
+    padding: 20px;
+    margin: 20px 0px;  
+}
+.base-content button{
+    font-size: 20px;
+    color:#283fa5;
+    padding: 10px;
+    border: 0;
+    border-radius:15px ;
+    box-shadow:1px 1px 20px 10px #5c6177;
+}
+                                                                     /*5- Category */
+
+.category-item {
+    position: relative;
+    height:fit-content;
+    margin-top: 20px ;
+    }
+.category-item img{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+    box-shadow:-5px -5px 20px 5px #aebaeb;
+}
+.category-item-subtitle{
+
+   color: gray;
+   font-size: 20px;
+}
+.category-item-title {
+    font-size: 22px;
+}
+.category-item .icon{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background-color: rgb(100, 109, 224);
+    color: #e6e6f8;
+    text-align: center;
+    display: block;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s;
+}
+.category-item:hover .icon{
+    visibility: visible;
+    opacity: 1;
+}
+ .carousel-caption{
+    position: relative;
+    left:0px ;
+    top:30px;
+}
+.carousel-caption .icon{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: 50px;
+    text-shadow: 1px 1px 10px rgb(169, 181, 233);
+}
+.carousel-caption .discount-title{
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    font-size: 30px;
+    text-shadow: 1px 1px 10px rgb(169, 181, 233);
+}
+
+.carousel-caption .desc {
+    
+    position: absolute;
+    top:150px;
+    left: 20px;
+}
+
+
+.discount-item:nth-child(2){
+    background-image: url(../image/bussnis.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s;
+}
+.discount-item:nth-child(3){
+    background-image: url(../image/programs-c.jpg);
+    background-size: cover; 
+    background-position: center;
+    transition: transform 0.5s;
+}
+.discount-item:hover{
+    transform: scale(1.12);
+}
+
+                                                           /*6- Services Icons */
+.services {
+    display:flex;
+    margin: 20px auto;
+}
+.services-items{
+    flex:1;
+    text-align: center;
+    /* border-left: 2px solid blue; */
+}
+.services-items:first-child{
+    border:0;
+}
+
+.services-icon{
+    min-width: 80px;
+    height: 60px;
+    background-image: url(../image/icons1.jpg);   
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+.icon1{
+background-position: center -10px;
+
+}
+.services-items:hover .services-icon{
+    background-position: center -75px;
+}
+.icon2{
+background-position: center -140px;
+}
+.services-items:hover .icon2{
+    background-position: center -205px;
+}
+.icon3{
+background-position: center -270px;
+}
+.services-items:hover .icon3{
+    background-position: center -335px;
+}
+.icon4{
+background-position: center -400px;
+ }
+ .services-items:hover .icon4{
+    background-position: center -465px;
+}
+.icon5{
+background-position: center -530px;
+}
+.services-items:hover .icon5{
+    background-position: center -595px;
+}
+.services-data h3{
+    font: bold 20px Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.services-data span{
+    padding-top: 20px;
+    color: rgb(102, 123, 180);
+    font-size: 15px;
+    margin: 20px auto;
+}
+                                                              /* 7- Skills */
+    
+  
+
+.card{
+    position: relative;
+    background-color: #dcdefc;
+    box-shadow: -5px -5px 20px 10px rgb(163, 163, 197);
+} 
+.card-img-top{
+    width: 100%;
+    height: 250px;
+}
+
+.skills-overlay{
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform:scalex(0);
+    opacity: 0.6;
+    transition: transform 1s;
+}
+.skills-list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    }
+.skills-list a{
+    width: 40px;
+    height: 40px;
+    
+}
+.skills-list a i{
+    color: rgb(204, 204, 230);
+    font-size: 30px;
+    line-height: 40px;
+    
+}
+.skills-item:hover .skills-overlay{
+    transform: scalex(1);
+}
+
+.star-icon{
+    color: rgb(8, 8, 143);
+}
+.skills-info p{
+   
+    margin: 10px 0;
+}
+   
+.footer-right p{
+    font-size: 40px;
+    color: #fdfafa;
+    text-align: center;
+}
+.footer-right a{
+    list-style: none;
+    text-align: center;
+    font-size:30px;
+    padding: 5px 5px;
+    line-height: 30px;
+    box-shadow: -10px -10px 20px 5px rgba(119, 23, 119, 0.4);
+    animation: icon-move 10s ease-in-out infinite forwards;
+}
+
+@keyframes icon-move{
+    from{transform: rotatey(0deg);}
+    to{transform: rotatey(360deg);}
+}
+
+.footer-right .d-flex a::after{
+position: absolute;
+content: '';
+width: 100%;
+height: 100%;
+border-radius: 50%;
+top:0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color:#2f6dc9;
+opacity: 0;
+transition:  2s;
+}
+.footer-right  .d-flex  a:hover::after{
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+
