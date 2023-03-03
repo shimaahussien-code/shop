@@ -48,7 +48,7 @@ Num++;
        priceModel.innerHTML= "Your balance now" + descount +"$";
    }
    btncalc.onclick = function (){
-    pricecontent.innerHTML= "TOTAL :" + totalPrice +"$"
+    pricecontent.innerHTML= "TOTAL :" + totalPrice +"$" +" <br/> "
    }
     btnreset.onclick = function(){
         content.innerHTML= "";

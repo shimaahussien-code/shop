@@ -123,63 +123,9 @@ transform-origin: left;
 }
    
           /*//////*/
-.header-content .head-icons ul li  {
-    padding: 10px ;
-    font-weight: bold;
-}
-.header-content .head-icons ul li .icon {
- position: relative;
- margin-right:10px;
-}
-.header-content .head-icons ul li .icon::after{
-    position: absolute;
-    content: "0";
-    background-color: #fdfafa;
-    color: #0b16b9;
-    border-radius: 50%;
-    padding: 3px;
-    font-size: 15px;
-    bottom: -8px;
-}
+/*  */
                                                                  /*4- Base part */
-.base-container{
-    width: 90%;
-    height: 500px;
-    position: relative;
-}
-.base-container img {
-    width: 100%;
-    height: 500px;
-    position: absolute;
-    border-radius: 30px;
-box-shadow: -1px -1px 20px 5px rgb(236, 236, 247);
-}
-.base-container .base-content{
-    position: absolute;
-    text-align: center;
-    width:40%;
-    bottom: 100px;
-    left: 20px;
-}
-.base-content .title{
-    font-size: 30px;
-    text-shadow:1px 1px 30px #5c6177;
-}
-.base-content .desc{
-    font-size: 20px;
-    text-align: justify;
-    color: #5c6177;
-    padding: 20px;
-    margin: 20px 0px;  
-}
-.base-content button{
-    font-size: 20px;
-    color:#283fa5;
-    padding: 10px;
-    border: 0;
-    border-radius:15px ;
-    box-shadow:1px 1px 20px 10px #5c6177;
-}
+
                                                                      /*5- Category */
 
 .category-item {
@@ -220,31 +166,13 @@ box-shadow: -1px -1px 20px 5px rgb(236, 236, 247);
     visibility: visible;
     opacity: 1;
 }
- .carousel-caption{
-    position: relative;
-    left:0px ;
-    top:30px;
-}
-.carousel-caption .icon{
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    font-size: 50px;
-    text-shadow: 1px 1px 10px rgb(169, 181, 233);
-}
-.carousel-caption .discount-title{
-    position: absolute;
-    left: 20px;
-    top: 0px;
-    font-size: 30px;
-    text-shadow: 1px 1px 10px rgb(169, 181, 233);
-}
-
-.carousel-caption .desc {
-    
-    position: absolute;
-    top:150px;
-    left: 20px;
+ .carousel-inner img{
+    width: 100%;
+    height:400px ;
+ }
+.discount-text{
+    width:40% ;
+    height:400px ;
 }
 
 
