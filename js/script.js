@@ -21,22 +21,23 @@ var productNum = document.querySelector("#shopping")
   var pricelist = document.querySelector(".skills .holder")
   var totalPrice = 0
   var descount =0
-  
+window.onload=function(){
+    confirm("WELCOME!!! To get our products press OK")
+}
    allProducts.forEach( function (item){
     
    
         item.onclick = function (){
+            totalPrice += +(item.getAttribute("price"))
+            content.innerHTML += item.textContent + " <br/> "     
+            pricecontent.innerHTML += item.getAttribute("price") + "$" +" <br/> "
+            Num++;
+            productNum.innerHTML = Num
             if (content.innerHTML != "" ){
                 
                 pricelist.style.display = "block"
                 
             }
-            
-Num++;
-   productNum.innerHTML = Num
-            totalPrice += +(item.getAttribute("price"))
-            content.innerHTML += item.textContent + " <br/> "     
-            pricecontent.innerHTML += item.getAttribute("price") + "$" +" <br/> "
             
             contentModel.innerHTML  += item.textContent + " <br/> "
             priceModel.innerHTML  += item.getAttribute("price") + "$" +" <br/> "
@@ -53,22 +54,28 @@ Num++;
     btnreset.onclick = function(){
         content.innerHTML= "";
         pricecontent.innerHTML = ""
+        contentModel.innerHTML= "";
+        priceModel.innerHTML = ""
         totalPrice=0
         descount=0
         Num=0
         productNum.innerHTML = 0
      }
      btnresetModel.onclick = function(){
-        contentModel.innerHTML= "";
+        
         priceModel.innerHTML = ""
+        
+        
         descount=0
-        Num=0
-        productNum.innerHTML = 0
+        
+        
      }
     
    btnclose.onclick = function (){
     content.innerHTML= "";
     pricecontent.innerHTML = ""
+    contentModel.innerHTML= "";
+    priceModel.innerHTML = ""
     totalPrice=0 
     descount=0
     Num=0
@@ -76,6 +83,8 @@ Num++;
     pricelist.style.display = "none"
 }
 btnclosemodel.onclick = function (){
+    content.innerHTML= "";
+    pricecontent.innerHTML = ""
     contentModel.innerHTML= "";
     priceModel.innerHTML = ""
     totalPrice=0 
