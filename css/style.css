@@ -90,14 +90,14 @@ position: absolute;
 border: 0px groove rgb(129, 136, 194); 
 left: 0;
 top:0; 
-transition: transform 0.3s;
+transition: transform 0.5s;
 
 }
 .navbar  .nav-link:before{
-    width: 103%;
+    width: 100%;
     height: 100%;
     border-width: 0 3px;
-    transform: scale3d(1,0,1);
+    transform: scale3d(0,0,1);
 
 }
 .navbar  .nav-link:hover:before{
@@ -105,16 +105,16 @@ transition: transform 0.3s;
  padding: 0px ;
 }
 .navbar  .nav-link:after{
-    width: 98%;
+    width: 100%;
     height: 100%;   
 border-width: 3px 0;
-transform: scale3d(0,1,1);
-transform-origin: left;
+transform: scale3d(0,0,1);
+transform-origin: center;
 
 }
 .navbar  .nav-link:hover:after{
  transform: scale3d(1,1,1);
- transition-delay: 0.3s;
+ /* transition-delay: 0.2s; */
  padding: 0px ;
 }
 .navbar .nav-link:hover::first-letter,.navbar .nav-link .btn:hover::first-letter{
@@ -171,7 +171,11 @@ transform-origin: left;
     height:400px ;
  }
 .discount-text{
-    width:40% ;
+    min-width:40% ;
+    height:400px ;
+}
+.discount-item{
+    max-width:25% ;
     height:400px ;
 }
 

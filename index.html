@@ -64,6 +64,33 @@
                 </div>
             </nav>
                     <!-- /navbar -->
+        <!-- Modal -->
+<div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-primary">
+          <h5 class="modal-title text-light shadow-lg" id="mymodelLabel">Get Your Discount</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+            <div class="holder" >
+                <div  class="pricelist d-flex justify-content-around mx-auto my-5 bg-light border-3 rounded-3 shadow-lg " style="max-width: 600px;">
+                    <div id="contentModel" class="sales-list   border border-primary m-3" style="width: 300px; height: 150px;overflow-y: auto;"></div>
+                    <div id="priceModel" class="price-list  border border-primary  m-3" style="width: 100px;max-height: 150px;overflow-y: auto;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-around">
+            <button id="btncalcModel" type="button" class="btn btn-primary text-white mx-1"  >Discount</button>
+            <button id="btncontinue" type="button" class="btn btn-primary text-white mx-1" data-bs-dismiss="modal" >continue</button>
+            <button id="btnresetModel" type="button" class="btn btn-primary text-white mx-1" >Reset</button>
+            <button id="btnclosemodel" type="button" class="btn btn-primary text-white mx-1" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+        <!-- /modal -->
                 
             
     </header> 
@@ -150,6 +177,7 @@
             </div> <!-- /base-content -->
         
     </main> 
+    <hr>
                                             <!-- category -->
     <section class="category ">
         <div class="container category-header section-header">
@@ -183,7 +211,7 @@
                     <i class="icon fa fa-angle-right fa-2x"></i>
                 </div> <!-- /category-item -->
                 </div>
-                <div class="d-flex justify-content-between my-5 flex-sm-column  " style="gap:20px ; height: 400px;" >
+                <div class="d-flex justify-content-between my-5   " style="gap:20px ; height: 400px;" >
                   <div class="discount-text  shadow " style="min-width: 40%;">
                     <div id="demo" class="carousel slide " data-bs-ride="carousel">
                         <!-- Indicators/dots -->
@@ -200,21 +228,21 @@
                             <img src="image/platform.png" alt="pic"   >
                             <div class="carousel-caption">
                                 <h2 class="discount-title text-secondary ">Udacity’s Talent Transformation Suite</h2>
-                                <p class="desc">Combine technology training for employees with industry experts, mentors, and projects, for critical thinking that pushes innovation.</p>
+                                
                             </div>
                           </div>
                           <div class="carousel-item ">
                             <img src="image/programing2.png" alt="pic"  >
                             <div class="carousel-caption">
                                 <h2 class="discount-title text-secondary ">Udacity’s Talent Transformation Suite</h2>
-                                <p class="desc">Combine technology training for employees with industry experts, mentors, and projects, for critical thinking that pushes innovation.</p>
+                                
                             </div>
                           </div>
                           <div class="carousel-item">
                             <img src="image/art.png" alt="pic"  >
                             <div class="carousel-caption">
                                 <h2 class="discount-title text-secondary ">Udacity’s Talent Transformation Suite</h2>
-                                <p class="desc">Combine technology training for employees with industry experts, mentors, and projects, for critical thinking that pushes innovation.</p>
+                                
                             </div>
                           </div>
                           
@@ -558,33 +586,7 @@
  
         </div> <!-- /container -->
         
-        <!-- Modal -->
-<div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header bg-primary">
-          <h5 class="modal-title text-light shadow-lg" id="mymodelLabel">Login</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <!-- Modal body -->
-        <div class="modal-body">
-            <div class="holder" >
-                <div  class="pricelist d-flex justify-content-around mx-auto my-5 bg-light border-3 rounded-3 shadow-lg " style="max-width: 600px;">
-                    <div id="contentModel" class="sales-list   border border-primary m-3" style="width: 300px; height: 150px;overflow-y: auto;"></div>
-                    <div id="priceModel" class="price-list  border border-primary  m-3" style="width: 100px;max-height: 150px;overflow-y: auto;"></div>
-                </div>
-            </div>
-        </div>
-        <div class="modal-footer d-flex justify-content-around">
-            <button id="btncalcModel" type="button" class="btn btn-primary text-white mx-1"  >Discount</button>
-            <button id="btncontinue" type="button" class="btn btn-primary text-white mx-1" data-bs-dismiss="modal" >continue</button>
-            <button id="btnresetModel" type="button" class="btn btn-primary text-white mx-1" >Reset</button>
-            <button id="btnclosemodel" type="button" class="btn btn-primary text-white mx-1" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-</div>
-        <!-- /modal -->
+        
         
         
     </section> <!-- /Skills section -->
